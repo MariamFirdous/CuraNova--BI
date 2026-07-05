@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CuraNova — Understand your medical report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">+</span>
+        <span class="brand-text">
+          <span class="brand-cura">Cura</span><span class="brand-nova">Nova</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="simplify.html">Simplify a report</a>
+        <a href="how.html">How it works</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+
+  <header id="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">For patients, not for doctors</p>
+        <h1>Your lab report,<br>said in plain words.</h1>
+        <p class="hero-sub">CuraNova takes the dense clinical language on your report — the codes, ranges, and abbreviations — and rewrites it the way a doctor would explain it to you in person.</p>
+        <div class="hero-actions">
+          <a href="simplify.html" class="btn btn-primary">Simplify my report</a>
+          <a href="how.html" class="btn btn-ghost">See how it works</a>
+        </div>
+      </div>
+
+      <div class="hero-demo" aria-label="Live example of a report line being translated">
+        <label for="demo-jargon" class="demo-label">On your report</label>
+        <input id="demo-jargon" class="demo-text mono" type="text" readonly>
+
+        <div class="demo-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22">
+            <path d="M12 4v14M12 18l-5-5M12 18l5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <label for="demo-plain" class="demo-label">What it means</label>
+        <textarea id="demo-plain" class="demo-text" rows="2" readonly></textarea>
+
+        <div class="demo-dots" id="demo-dots"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="dashboard-section">
+      <div class="section-inner">
+        <div class="dashboard-card">
+          <div class="dashboard-heading">
+            <div>
+              <p class="eyebrow">Welcome</p>
+              <h2>Make your report easier to understand</h2>
+            </div>
+            <span class="dashboard-chip">Private and simple</span>
+          </div>
+          <p class="section-sub">Choose a section above to open a dedicated page for simplifying a report, learning how the tool works, or reviewing privacy details.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>CuraNova — built to make reports readable, not to make decisions for you.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CuraNova — Simplify a report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">+</span>
+        <span class="brand-text">
+          <span class="brand-cura">Cura</span><span class="brand-nova">Nova</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="simplify.html">Simplify a report</a>
+        <a href="how.html">How it works</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="dashboard-section">
+      <div class="section-inner">
+        <div class="dashboard-card">
+          <div class="dashboard-heading">
+            <div>
+              <p class="eyebrow">Simplify</p>
+              <h2>Simplify a report</h2>
+            </div>
+            <span class="dashboard-chip">Plain-language view</span>
+          </div>
+          <p class="section-sub">Paste your report text and let CuraNova turn it into clear, everyday language without sending anything away from your browser.</p>
+
+          <div class="simplify-grid">
+            <div class="panel">
+              <label for="report-input" class="panel-label">Your report</label>
+              <textarea id="report-input" placeholder="e.g. Hemoglobin A1c: 6.8%. LDL cholesterol: 165 mg/dL, elevated. TSH within normal limits."></textarea>
+              <div class="panel-actions">
+                <button id="sample-btn" class="btn btn-ghost btn-small" type="button">Use a sample report</button>
+                <button id="simplify-btn" class="btn btn-primary btn-small" type="button">Explain this report</button>
+              </div>
+            </div>
+
+            <div class="panel panel-output">
+              <label for="output" class="panel-label">Plain-English explanation</label>
+              <textarea id="output" class="output-area" readonly>Your simplified explanation will appear here.</textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>CuraNova — built to make reports readable, not to make decisions for you.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
