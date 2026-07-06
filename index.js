@@ -26,8 +26,8 @@ function renderHeroExample(i){
   const demoPlain = document.getElementById("demo-plain");
   const dots = document.querySelectorAll("#demo-dots span");
 
-  if (demoJargon) demoJargon.textContent = heroExamples[i].jargon;
-  if (demoPlain) demoPlain.textContent = heroExamples[i].plain;
+  if (demoJargon) demoJargon.value = heroExamples[i].jargon;
+  if (demoPlain) demoPlain.value = heroExamples[i].plain;
   dots.forEach((d, idx) => d.classList.toggle("active", idx === i));
 }
 
