@@ -1,4 +1,4 @@
-# CuraNova--BI
+# CuraNova
 
 CuraNova is a patient-friendly web app that helps people understand medical report language in simple, everyday words. It turns confusing clinical terms into clear explanations so users can better understand their health information.
 
